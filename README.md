@@ -1,4 +1,4 @@
-# Self-Hosted Media Player Infrastructure
+# Self-Hosted Media Player
 
 ## Overview
 This project is a self-hosted media infrastructure deployed on Ubuntu Server using Docker.
