@@ -1,0 +1,10 @@
+services:
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: cloudflared
+    restart: unless-stopped
+    network_mode: host
+    user: "65532"
+    command: tunnel run
+    volumes:
+      - ./cloudflared:/etc/cloudflared

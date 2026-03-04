@@ -1,0 +1,11 @@
+services:
+  jellyfin:
+    image: jellyfin/jellyfin:latest
+    container_name: jellyfin
+    ports:
+      - "8096:8096"
+    volumes:
+      - /srv/data/jellyfin/config:/config
+      - /srv/data/jellyfin/cache:/cache
+      - /srv/data/media:/media
+    restart: unless-stopped
